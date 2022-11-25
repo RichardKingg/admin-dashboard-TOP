@@ -67,11 +67,33 @@ body {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-column: 2 / 3;
+  gap: 8px;
 }
 
 .projectsH,
-.projectsGrid {
+.projectGrid {
   grid-column: 1 / 2;
+}
+
+.projectGrid {
+  border: 1px solid black;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap: 10px;
+  height: auto;
+  grid-row: 2 / 5;
+}
+
+.projects {
+  border: 1px solid black;
+}
+
+.announcementDiv {
+  grid-row: 2 / 3;
+}
+
+.trendingH {
+  grid-row: 3 / 4;
 }
 
 .announcementH,
