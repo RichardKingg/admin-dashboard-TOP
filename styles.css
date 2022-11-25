@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+/* Sidebar */
+.sidebar {
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding-left: 5px;
+}
+
+.dashboardTitle {
+  padding-top: 10px;
+}
+
+.menu1 ul,
+.menu2 ul {
+  line-height: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+/* Header */
+.header {
+  grid-column: 2 / 3;
+}
+
+/* Content */
+.content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column: 2 / 3;
+}
+
+.projectsH,
+.projectsGrid {
+  grid-column: 1 / 2;
+}
+
+.announcementH,
+.trendingH,
+.announcementDiv,
+.trendingDiv {
+  grid-column: 2 / 3;
+}
