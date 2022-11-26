@@ -36,21 +36,20 @@ body {
   align-items: flex-start;
   gap: 30px;
   padding-left: 5px;
+  padding-right: 5px;
   background-color: var(--main-color);
   color: var(--text-color-1);
 }
 
 .dashboardTitle {
+  font-size: 28px;
   padding-top: 10px;
-}
-
-.menu1 ul,
-.menu2 ul {
-  line-height: 30px;
 }
 
 .sidebar ul {
   list-style: none;
+  line-height: 30px;
+  font-size: 18px;
 }
 
 /* Header */
@@ -59,6 +58,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column: 2 / 3;
+  padding-bottom: 10px;
 }
 
 .searchbar {
@@ -79,9 +79,21 @@ body {
   grid-column: 3 / 5;
 }
 
+.notifName {
+  font-size: 16px;
+}
+
 .profileName {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+}
+
+.profileNameSmall {
+  font-size: 12px;
+}
+
+.profileNameLarge {
+  font-size: 22px;
 }
 
 .profileImg {
@@ -90,17 +102,39 @@ body {
 }
 
 .buttonsMenu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   grid-column: 3 / 5;
   grid-row: 2 / 3;
+  justify-self: center;
+  align-self: center;
+  gap: 20px;
+}
+
+.buttonsHeader {
+  background-color: var(--contrast-color);
+  color: var(--secondary-color2);
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
 }
 
 /* Content */
 .content {
+  padding-top: 20px;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-column: 2 / 3;
   gap: 8px;
   background-color: var(--secondary-color);
+}
+
+.projectsH,
+.announcementH,
+.trendingH {
+  font-size: 20px;
 }
 
 .projectsH,
@@ -118,6 +152,7 @@ body {
   gap: 10px;
   height: auto;
   margin-left: 20px;
+  margin-bottom: 20px;
   grid-row: 2 / 5;
 }
 
@@ -131,6 +166,7 @@ body {
   grid-row: 2 / 3;
   background-color: var(--secondary-color2);
   margin-right: 20px;
+  margin-bottom: 10px;
   border-radius: 5px;
 }
 
@@ -138,9 +174,14 @@ body {
   padding: 5px 10px;
 }
 
+.announcementDiv h6 {
+  font-size: 12px;
+}
+
 .announcementDiv p {
   border-bottom: 1px solid var(--contrast-color);
   padding-bottom: 10px;
+  font-size: 10px;
 }
 
 .announcementDiv > div:last-child > p {
@@ -157,6 +198,10 @@ body {
   margin-right: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
+}
+
+.trendingAdmins p {
+  font-size: 12px;
 }
 
 .announcementH,
