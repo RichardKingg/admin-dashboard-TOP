@@ -1,10 +1,18 @@
 :root {
-  --main-color: #fcfc46;
+  --main-color: #ffff4a;
   --secondary-color: #e9e9e9;
   --secondary-color2: #ffffff;
   --text-color-1: #000000;
   --text-color-2: #e0e0e0;
   --contrast-color: #ffa02c;
+}
+
+@font-face {
+  font-family: "robotoregular";
+  src: url("./fonts/roboto-regular-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
@@ -13,6 +21,7 @@
 }
 
 body {
+  font-family: "robotoregular";
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 5fr;
@@ -123,6 +132,20 @@ body {
   background-color: var(--secondary-color2);
   margin-right: 20px;
   border-radius: 5px;
+}
+
+.announcementDiv div {
+  padding: 5px 10px;
+}
+
+.announcementDiv p {
+  border-bottom: 1px solid var(--contrast-color);
+  padding-bottom: 10px;
+}
+
+.announcementDiv > div:last-child > p {
+  border: none;
+  padding: 0;
 }
 
 .trendingH {
