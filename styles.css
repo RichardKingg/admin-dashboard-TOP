@@ -15,6 +15,11 @@
   font-style: normal;
 }
 
+img {
+  width: 100px;
+  height: 100px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -42,7 +47,7 @@ body {
 }
 
 .dashboardTitle {
-  font-size: 28px;
+  font-size: 26px;
   padding-top: 10px;
 }
 
@@ -50,6 +55,10 @@ body {
   list-style: none;
   line-height: 30px;
   font-size: 18px;
+}
+
+.sidebar span {
+  margin-right: 3px;
 }
 
 /* Header */
@@ -68,22 +77,33 @@ body {
 }
 
 .searchbar > input {
-  width: 300px;
-  height: 18px;
+  width: min(90%, 900px);
+  height: 24px;
   background-color: var(--secondary-color);
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .notifications {
   grid-column: 3 / 5;
+  display: flex;
+  gap: 60px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-right: 100px;
 }
 
 .notifName {
-  font-size: 16px;
+  font-size: 18px;
 }
 
-.profileName {
+.notifications > span {
+  font-size: 30px;
+  display: flex;
+}
+
+.notifName .profileName {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
@@ -106,7 +126,8 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-column: 3 / 5;
   grid-row: 2 / 3;
-  justify-self: center;
+  margin-right: 20px;
+  justify-self: stretch;
   align-self: center;
   gap: 20px;
 }
@@ -114,7 +135,7 @@ body {
 .buttonsHeader {
   background-color: var(--contrast-color);
   color: var(--secondary-color2);
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   border: none;
   border-radius: 5px;
