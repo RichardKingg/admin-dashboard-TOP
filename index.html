@@ -5,38 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css
+    "
+    />
     <title>Admin Dashboard project</title>
   </head>
   <body>
     <!-- Sidebar -->
     <div class="sidebar">
-      <h3 class="dashboardTitle">Dashboard</h3>
+      <h3 class="dashboardTitle">
+        <span class="mdi mdi-star-four-points"></span>Dashboard
+      </h3>
       <div class="menu1">
         <ul>
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>History</li>
-          <li>Tasks</li>
-          <li>Communities</li>
+          <li><span class="mdi mdi-home"></span>Home</li>
+          <li><span class="mdi mdi-account"></span>Profile</li>
+          <li><span class="mdi mdi-message"></span>Messages</li>
+          <li><span class="mdi mdi-clock-outline"></span>History</li>
+          <li><span class="mdi mdi-book-open"></span>Tasks</li>
+          <li><span class="mdi mdi-account-multiple"></span>Communities</li>
         </ul>
       </div>
       <div class="menu2">
         <ul>
-          <li>Settings</li>
-          <li>Support</li>
-          <li>Privacy</li>
+          <li><span class="mdi mdi-cog"></span>Settings</li>
+          <li><span class="mdi mdi-face-agent"></span>Support</li>
+          <li><span class="mdi mdi-eye"></span>Privacy</li>
         </ul>
       </div>
     </div>
 
     <!-- Header -->
     <div class="header">
-      <div class="searchbar"><span></span><input type="search" /></div>
+      <div class="searchbar">
+        <span class="mdi mdi-magnify"></span
+        ><input type="search" placeholder="search..." />
+      </div>
       <div class="notifications">
-        <span class="notifBell"></span>
-        <img src="" alt="" />
-        <h5 class="notifName">RichardKingg</h5>
+        <h5 class="notifName">
+          <span class="mdi mdi-bell"></span
+          ><span class="mdi mdi-github"></span>RichardKingg
+        </h5>
       </div>
       <div class="profileImg">
         <img src="" alt="" />
