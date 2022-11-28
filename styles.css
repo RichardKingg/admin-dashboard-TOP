@@ -27,6 +27,20 @@ body {
   grid-template-columns: 1fr 5fr;
 }
 
+a {
+  color: var(--text-color-1);
+  font-size: 24px;
+}
+
+button:hover {
+  background-color: #d28424;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--contrast-color);
+}
+
 /* Sidebar */
 .sidebar {
   grid-column: 1 / 2;
@@ -35,6 +49,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
+  min-width: fit-content;
   padding-left: 5px;
   padding-right: 5px;
   background-color: var(--main-color);
@@ -44,6 +59,19 @@ body {
 .dashboardTitle {
   font-size: 26px;
   padding-top: 10px;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+}
+
+.menu1 {
+  position: sticky;
+  top: 75px;
+}
+
+.menu2 {
+  position: sticky;
+  top: 285px;
 }
 
 .sidebar ul {
@@ -79,13 +107,16 @@ body {
   border-radius: 8px;
 }
 
+.searchbar > span {
+  margin-right: 5px;
+}
+
 .notifications {
   grid-column: 3 / 5;
   display: flex;
   gap: 60px;
   justify-content: flex-end;
-  align-items: flex-start;
-  margin-top: 20px;
+  align-items: center;
   margin-right: 100px;
 }
 
@@ -94,7 +125,7 @@ body {
 }
 
 .notifications > span {
-  font-size: 30px;
+  font-size: 24px;
   display: flex;
 }
 
